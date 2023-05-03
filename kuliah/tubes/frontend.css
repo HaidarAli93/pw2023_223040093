@@ -1,0 +1,287 @@
+/* reset settingan default html */
+body, html{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+div.container {
+    margin: 0px;
+}
+
+/* Bagian Header */
+div#header {
+    background-color: rgba(169, 169, 169, 0.8);
+    width: 100%;
+    height: 60px;
+    border: 0.5px solid black;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+}
+div#header div{
+    display: inline-block;
+    float: right;
+    text-align: center;
+    height: 100%;
+    line-height: 60px;
+}
+
+/* Logo Section */
+div#header div.logo {
+    float: left;
+    text-align: left;
+    width: 300px;
+}
+div#header div.logo img {
+    width: 60px;
+    height: 60px;
+    margin: 0 0 0 10px;
+    float: left;
+}
+div#header div.logo h2 {
+    color: rgb(31, 102, 109);
+    width: 200px;
+    text-align: left;
+    line-height: 60px;
+    margin: 0;
+    font-weight: bold;
+}
+div#header div.logo:hover {
+    cursor: pointer;
+}
+
+/* Bagian menu navigasi */
+div#header div#menu {
+    float: left;
+    width: 630px;
+    height: 100%;
+}
+div#header div#menu ul {
+    padding: 0px;
+    height: 100%;
+    margin: 0px;
+}
+div#header div#menu ul li {
+    display: block;
+    list-style-type: none;
+    float: left;
+    width: 157px;
+}
+div#menu ul li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+div#header div#menu ul li a:hover {
+    background-color: gray;
+    color: whitesmoke;
+    border: 0.5px solid black;
+}
+
+/* Sub menu navigasi, Dropdown */
+.dropdown {
+    display: inline-block;
+}
+.dropdown ul {
+    text-decoration: none;
+    width: 157px;
+    display: none;
+    transition: all 0.3s;
+}
+.dropdown ul li {
+    background-color: darkgray;
+    border: 0.5px solid black;
+    height: 40px;
+    line-height: 40px;
+}
+.dropdown:hover ul {
+    display: block;
+}
+
+/* Search input Section */
+div#header div#search {
+    width: 200px;
+}
+input.input-user {
+    width: 80%;
+    line-height: 30px;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding-left: 10px;
+    background-color: rgba(225, 225, 225, 0.854);
+}
+
+/* Login Button Section */
+div#header div.login {
+    width: 150px;
+}
+div#header div.login a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+div#header div.login a:hover {
+    background-color: gray;
+    color: whitesmoke;
+    border: 0.5px solid black;
+}
+
+/* Bg Header */
+div#bgheader {
+    background-color: black;
+    opacity: 0.5;
+    height: 60px;
+    width: 100%;
+    position: relative;
+}
+
+/* Bagian Atas website (setelah header) */
+div#bag-atas {
+    background-image: url(./img/bg-website.jpg);
+    height: 454px;
+    margin: 0px;
+    position: relative;
+}
+div#bag-atas div {
+    height: 100%;
+    background-color: rgba(50, 132, 132, 0.5);
+}
+div#bag-atas div div.container {
+    width: 800px;
+    margin: 0 auto;
+}
+div#bag-atas div div.container h1, div#bag-atas div div.container p {
+    letter-spacing: 2px;
+    text-align: center;
+    opacity: 0.85;
+    color: whitesmoke;
+}
+div#bag-atas div div.container h1 {
+    font-size: 75px;
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+div#bag-atas div div.container p {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+/* Bagian tengah website */
+div#bag-tengah {
+    background-image: url(./img/bg-website2.jpg);
+    margin: 0px;
+    position: relative;
+    height: 800px;
+}
+div#bag-tengah div {
+    background-color: rgba(0, 31, 125, 0.5);
+    height: 100%;
+}
+div#bag-tengah div div.container{
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    background: none;
+}
+div#bag-tengah div div.container h1 {
+    letter-spacing: 2px;
+    color: whitesmoke;
+    text-align: center;
+}
+div#bag-tengah div div.container{
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    background: none;
+}
+div#bag-tengah div div.container h1 {
+    letter-spacing: 2px;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Search Bar */
+div#bag-tengah div div.container form {
+    display: block;
+    width: 600px;
+    height: 100px;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+div#bag-tengah div div.container form input[type=search] {
+    display: inline-block;
+    height: 50px;
+    width: 540px;
+    border-radius: 20px 0 0 20px;
+    background-color: rgb(120, 182, 164);
+    border: 2px solid darkcyan;
+    transition: border 0.3s;
+    padding-left: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+div#bag-tengah div div.container form input[type=search]:hover {
+    border: 3px solid darkslateblue;
+}
+div#bag-tengah div div.container form button {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 0 20px 20px 0;
+    transition: all 0.3s;
+    background-color: rgb(120, 182, 164);
+    position: absolute;
+    border: 2px solid darkcyan;
+}
+div#bag-tengah div div.container form button:hover {
+    border-radius: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgb(0, 255, 204);
+    border: 3px solid darkslateblue;
+}
+:placeholder-shown {
+    padding-left: 25px;
+}
+
+/* Bagian Footer */
+div#footer {
+    background-image: url(./img/footer-bg-website.jpg);
+}
+div#footer img {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+div.contact {
+    display: inline-block;
+    float: right;
+    color: whitesmoke;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+div.contact:hover {
+    opacity: 1;
+}
+div.contact h2 {
+    margin: 0 0 5px 0;
+}
+div.contact ul {
+    margin: 0;
+    padding-left: 20px;
+}
+/* Untuk Debugging */
+* {
+    border: none;
+}

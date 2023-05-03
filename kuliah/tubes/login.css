@@ -1,0 +1,81 @@
+
+/* Semua elemen */
+body {
+    box-sizing: border-box;
+    background-image: url(./img/bg-login.jpg);
+    background-size: cover;
+}
+/* Bagian Form */
+form {
+    display: block;
+    border: 2px solid peru;
+    width: 350px;
+    height: 500px;
+    margin: 100px auto;
+    border-radius: 10px;
+    background-color: rgba(0, 139, 139, 0.6);
+    box-shadow: 5px 5px 25px black;
+}
+form * {
+    display: block;
+    border-radius: 20px;
+}
+form div#undo {
+    width: 320px;
+    margin: 0 auto;
+}
+form div#undo * {
+    display: inline-block;
+}
+form div#undo a {
+    text-align: left;
+    color: darkblue;
+}
+form div#undo a:hover {
+    color: darkslateblue;
+}
+form div#undo a i {
+    padding-right: 5px;
+}
+form h2 {
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(0, 2, 121);
+    text-shadow: 2px 2px 10px darkcyan;
+}
+form input, form button {
+    width: 230px;
+    height: 40px;
+    margin: 40px auto;
+    padding: 0px;
+    border: 2px solid rgb(202, 162, 30);
+    background-color: darkgray;
+    transition: all 0.3s;
+}
+form input {
+    padding: 0px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+form input:hover {
+    border: 2px solid yellowgreen;
+    background-color: lightgray;
+}
+form button {
+    background-color: darkseagreen;
+    transition: all 0.3s;
+}
+form button:hover {
+    background-color: seagreen;
+    cursor: pointer;
+}
+form a {
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    color: darkslateblue;
+}
+form a:hover {
+    color: slateblue;
+}

@@ -1,9 +1,15 @@
 <?php 
 echo "Mulai<br />";
-$i = 0;
-while($i <= 2){
-    echo "Hello World!<br />";
-    $i += 1;
+$nilai_awal = 10;
+while($nilai_awal >= 1){
+    echo "Hello World $nilai_awal!<br />";
+    $nilai_awal--;
+}
+echo "Selesai<br />";
+echo "<hr />";
+echo "Mulai<br />";
+for($nilai_awal=1;$nilai_awal <= 10;$nilai_awal++){
+    echo "Hello World $nilai_awal kali. <br />";
 }
 echo "Selesai<br />";
 ?>
