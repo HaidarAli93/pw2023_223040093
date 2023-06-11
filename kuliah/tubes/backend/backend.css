@@ -1,0 +1,221 @@
+/* Umum */
+body {
+    margin: 0px;
+}
+* {
+    box-sizing: border-box;
+}
+/* Tampilan pilihan opsi pada sisi kiri */
+div#opsi {
+    height: 100%;
+    background-color: rgb(20, 20, 20);
+    width: 225px;
+    position: fixed;
+    box-shadow: 0px 5px 10px black;
+    z-index: 99;
+}
+div#opsi ul {
+    padding: 0px;
+    margin: 0px;
+}
+div#opsi ul li {
+    list-style-type: none;
+}
+div#opsi ul li a {
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding-left: 30px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    color: lightgray;
+    text-shadow: 1px 1px 3px darkgray;
+}
+div#opsi ul li a:hover {
+    background-color: rgb(230, 230, 230);
+    color: darkslategray;
+    text-shadow: 1px 1px 3px darkslateblue;
+    cursor: pointer;
+}
+div#opsi ul li a h4 {
+    line-height: 50px;
+    text-align: left;
+    margin: 0px;
+}
+
+/* Ul untuk bagian logout */
+div#opsi ul:nth-child(2), div#opsi ul:nth-child(2) li, div#opsi ul:nth-child(2) a, div#opsi ul:nth-child(2) li a h4 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* Tampilan untuk isi dari tiap-tiap opsi */
+div#konten {
+    background-color: rgb(202, 202, 202);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    padding-left: 225px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+div#konten h2 {
+    color: rgb(106, 66, 11);
+    text-align: center;
+    text-shadow: 0px 1px 3px rgb(81, 81, 81);
+}
+div#konten div.container {
+    margin: 20px auto;
+    background-color: rgb(161, 161, 161);
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    box-shadow: 0px 0px 10px;
+}
+div#konten div.container h2 {
+    color: rgb(3, 45, 30);
+    text-align: center;
+    text-shadow: 0px 1px 3px rgb(81, 81, 81);
+    margin: 0px;
+    padding-top: 10px;
+}
+
+/* Tampilan untuk isi halaman dashboard */
+div#konten div.container a {
+    text-decoration: none;
+    display: block;
+    width: 70px;
+    margin: 20px auto;
+    height: 30px;
+    background-color: cornflowerblue;
+    text-align: center;
+    line-height: 30px;
+    color: maroon;
+    border-radius: 5px;
+    text-shadow: 0px 1px 3px rgb(81, 81, 81);
+    box-shadow: 0px 0px 10px black;
+}
+div#konten div.container a:hover {
+    text-shadow: 0px 1px 3px rgb(81, 81, 81);
+    box-shadow: 0px 0px 10px darkmagenta;
+    background-color: maroon;
+    color: cornflowerblue;
+    transition: all 0.3s;
+}
+div#konten div.container a h4 {
+    margin: 0px;
+}
+div#konten div.container h3, div#konten div.container input {
+    margin: 0px auto 10px auto;
+    width: 300px;
+}
+
+/* Tampilan untuk isi dari halaman accounts management */
+table, th, td {
+    text-align: left;
+    border-bottom: 1px solid gray;
+    border-collapse: collapse;
+}
+table {
+    width: 95%;
+    margin: 30px auto;
+}
+div#konten div.container div#caridantambah {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+div#konten div.container div#caridantambah form {
+    margin-right: 10px;
+}
+div#konten div.container div#caridantambah form * {
+    float: left;
+}
+div#konten div.container div#caridantambah form input {
+    height: 30px;
+    margin: 0 10px 0 0;
+    padding: 0px 10px;
+    overflow: hidden;
+}
+div#konten div.container div#caridantambah div.btn {
+    padding: 10px 0px 10px 10px;
+    border-left: 3px solid gray;
+}
+div#konten div.container div#caridantambah div.btn a, div#konten div.container div#caridantambah form button {
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    height: 30px;
+    background-color: maroon;
+    text-align: center;
+    line-height: 30px;
+    color: cornflowerblue;
+    border-radius: 3px;
+    text-shadow: 0px 1px 3px rgb(81, 81, 81);
+    box-shadow: 0px 0px 10px darkmagenta;
+}
+div#konten div.container div#caridantambah div.btn a:hover, div#konten div.container div#caridantambah form button:hover {
+    text-shadow: 0px 1px 3px rgb(81, 81, 81);
+    box-shadow: 0px 0px 10px black;
+    background-color: cornflowerblue;
+    color: maroon;
+    transition: all 0.3s;
+}
+div#konten div.container table tbody tr td a {
+    float: left;
+    margin: 10px;
+}
+
+/* Tampilan untuk halaman tambah user dan ubah user */
+div#konten div.container form {
+    padding: 30px 0px 0px 30px;
+}
+div#konten div.container form * {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 10px 0px;
+}
+div#konten div.container form h4 {
+    color: maroon;
+    text-shadow: 0px 0px 2px black;
+}
+div#konten div.container form input {
+    display: block;
+    height: 25px;
+    width: 250px;
+}
+div#konten div.container form input, div#konten div.container form textarea {
+    border-radius: 5px;
+    border: 2px solid cornflowerblue;
+}
+div#konten div.container form input:hover, div#konten div.container form textarea:hover {
+    border: 2px solid maroon;
+    transition: border 0.3s;
+}
+div#konten div.container form input:focus, div#konten div.container form textarea:focus {
+    border: 2px solid green;
+    transition: border 0.3s;
+}
+div#konten div.container form button {
+    border: 3px;
+    display: block;
+    height: 25px;
+    width: 120px;
+    float: left;
+    margin: 0px 2.5px 0px 2.5px;
+    border-radius: 3px;
+    color: wheat;
+    background-color: black;
+    box-shadow: 0px 1px 3px wheat;
+}
+div#konten div.container form button:hover {
+    color: black;
+    background-color: wheat;
+    box-shadow: 0px 1px 3px black;
+    transition: all 0.3s;
+    cursor: pointer;
+}

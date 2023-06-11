@@ -1,3 +1,3 @@
 <?php
-require('./views/index.view.php');
+header('Location: ./frontend/index.php');
 ?>
